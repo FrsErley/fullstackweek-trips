@@ -1,9 +1,9 @@
-import Trips from "./about/components/Trips";
+"use client";
+
+import { useSession } from "next-auth/react";
 
 export default function Home() {
-  return (
-    <h1>
-      <Trips />
-    </h1>
-  );
+  const { data } = useSession();
+
+  return <div>Hello World</div>;
 }
