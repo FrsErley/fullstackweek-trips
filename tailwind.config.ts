@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "search-background": "url(/world-map.png)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
