@@ -11,10 +11,25 @@ const QuickSearch = () => {
         <div className="w-full h-[2px] bg-grayPrimary"></div>
       </div>
 
-      <div className="flex">
-        <div className="flex flex-col">
-          <Image width={30} height={30} src="/hotel.png" alt="Hotel" />
+      <div className="flex w-full justify-between mt-4">
+        <div className="flex flex-col items-center gap-1">
+          <Image width={35} height={35} src="/hotel.png" alt="Hotel" />
           <p className="text-sm text-grayPrimary">Hotel</p>
+        </div>
+
+        <div className="flex flex-col items-center gap-1">
+          <Image width={35} height={35} src="/farm.png" alt="Fazenda" />
+          <p className="text-sm text-grayPrimary">Fazenda</p>
+        </div>
+
+        <div className="flex flex-col items-center gap-1">
+          <Image width={35} height={35} src="/chale.png" alt="Chalé" />
+          <p className="text-sm text-grayPrimary">Chalé</p>
+        </div>
+
+        <div className="flex flex-col items-center gap-1">
+          <Image width={35} height={35} src="/bed.png" alt="Pousada" />
+          <p className="text-sm text-grayPrimary">Pousada</p>
         </div>
       </div>
     </div>
