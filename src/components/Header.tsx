@@ -2,6 +2,7 @@
 
 import { signIn, signOut, useSession } from "next-auth/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
@@ -19,9 +20,11 @@ const Header = () => {
 
   return (
     <div className="p-5 py-0 h-[93px] mx-auto flex justify-between items-center">
-      <div className="relative h-[32px] w-[182px]">
-        <Image src="/logo.png" alt="Full Stack Week" fill />
-      </div>
+      <Link href="/">
+        <div className="relative h-[32px] w-[182px]">
+          <Image src="/logo.png" alt="Full Stack Week" fill />
+        </div>
+      </Link>
 
       {status === "unauthenticated" && (
         <button className="text-primary text-sm" onClick={handleLoginClick}>
